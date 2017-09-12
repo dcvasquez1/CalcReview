@@ -1,3 +1,38 @@
 body {
-	background-color:#FFFFFF;
+	background-image: url("math-wallpaper.jpg");
+}
+p {
+    display: none;
+    font-family: 'helvetica';
+    text-align: center;
+    padding: 5px;
+    margin-top: 8px;
+    margin-bottom: 0px;
+    background-color: #bfbfbf;
+}
+
+h1 {
+    font-family: 'helvetica';
+    text-align: center;
+    padding: 5px;
+    display:block;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #00ff00;
+    background-color: #bfbfbf;
+}
+
+.number {
+    font-size:120%;
+    font-family: 'helvetica';
+    text-align: center;
+    display:inline;
+    padding: 5px;
+    margin-left: 150px;
+    margin-right: 150px;
+    margin-bottom: 200px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #00ff00;
+    background-color: #bfbfbf;
 }
