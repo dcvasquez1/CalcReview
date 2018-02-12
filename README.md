@@ -1,3 +1,4 @@
-# CalcReview
+# Quiz App
 
-https://dcvasquez1.github.io/CalcReview
+https://dsw-color-question.herokuapp.com
+https://github.com/dcvasquez1/CalcReview
