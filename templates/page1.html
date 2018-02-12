@@ -2,9 +2,8 @@
 <html>
 	<head>
 		<title>Quiz App</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="../static/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="../static/myscript.js"></script>
 	</head>
 	
 	<body>
@@ -20,9 +19,13 @@
 			How many countries are in Europe?
 		</p>
    
-		<form action="question-two" runat="server" method="post">
-			<input type="radio" value="A" /> 37
-			<input type="radio" value="B" /> 50
+		<form action="question-two" runat="server" method="POST">
+			<input type="radio" name="question1" value="A" checked="checked" /> 37	
+			<input type="radio" name="question1" value="B" /> 50	
+			<br>
+			<input type="radio" name="question1" value="C" /> 12	
+			<input type="radio" name="question1" value="D" /> 47	
+			<br>
 			<input type="submit" value="Submit" />
 		</form>
      

@@ -2,9 +2,8 @@
 <html>
 	<head>
 		<title>Quiz App</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="../static/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="../static/myscript.js"></script>
 	</head>
 	
 	<body>
@@ -20,9 +19,13 @@
 			Dr. Dre's iconic album "The Chronic" was released in which year?
 		</p>
    
-		<form action="final" runat="server" method="post">
-			<input type="radio" value="A" /> 1988
-			<input type="radio" value="B" /> 1992
+		<form action="final" runat="server" method="POST">
+			<input type="radio" name="question4" value="A" checked="checked" /> 1988
+			<input type="radio" name="question4" value="B" /> 1992
+			<br>
+			<input type="radio" name="question4" value="C" /> 2001
+			<input type="radio" name="question4" value="D" /> 1989
+			<br>
 			<input type="submit" value="Submit" />
 		</form>
 	</body>  

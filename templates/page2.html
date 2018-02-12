@@ -2,9 +2,8 @@
 <html>
 	<head>
 		<title>Quiz App</title>
-		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" type="text/css" href="../static/style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		<script src="../static/myscript.js"></script>
 	</head>
 	
 	<body>
@@ -20,9 +19,13 @@
 			Barack Obama was the _____ President of the United States
 		</p>
    
-		<form action="question-three" runat="server" method="post">
-			<input type="radio" value="A" /> 44th
-			<input type="radio" value="B" /> 50th
+		<form action="question-three" runat="server" method="POST">
+			<input type="radio" name="question2" value="A" checked="checked" /> 44th	
+			<input type="radio" name="question2" value="B" /> 50th	
+			<br>
+			<input type="radio" name="question2" value="C" /> 42nd	
+			<input type="radio" name="question2" value="D" /> 37th	
+			<br>
 			<input type="submit" value="Submit" />
 		</form>
     
