@@ -4,6 +4,7 @@ from flask import redirect
 from flask import session
 
 app = Flask(__name__)
+app.secret_key = '\x17\x96e\x94]\xa0\xb8\x1e\x8b\xee\xdd\xe9\x91^\x9c\xda\x94\t\xe8S\xa1Oe_'
 
 # In order to use "sessions",you need a "secret key".
 # This is something random you generate.  
