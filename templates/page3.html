@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>Calculus Review</title>
+		<title>Quiz App</title>
 		<link rel="stylesheet" href="style.css">
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script src="../static/myscript.js"></script>
@@ -9,26 +9,21 @@
 	
 	<body>
 		<h1 id="h1">
-			Review your Math!
+			Test yourself
 		</h1>
      
 		<p id="1" class="number"> 
-			Question 1
+			Question 3
 		</p>
    
 		<p id="q1" class="question">
-			Is 4 equal to 5?
+			Apollo 11 landed on the Moon in which year?
 		</p>
    
-		<form id="a1" runat="server" method="post">
-			<input type="radio" name="Gender" value="male" id="test" checked="checked" />male
-			<input type="radio" name="Gender" value="female" />female
-			<input type="submit" value="test" />
-			<!-- <asp:Button ID="btn" runat="server" Text="value" /> -->
+		<form action="question-four" runat="server" method="post">
+			<input type="radio" value="A" /> 1969
+			<input type="radio" value="B" /> 1978
+			<input type="submit" value="Submit" />
 		</form>
-     
-		<p id="nextButton">
-			Move On
-		</p>
 	</body>  
 </html>

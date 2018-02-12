@@ -12,12 +12,34 @@ app = Flask(__name__)
 #app.secret_key=os.environ["SECRET_KEY"]; #This is an environment variable.  
 #The value should be set in Heroku (Settings->Config Vars).  
 
-@app.route('/')
+@app.route("/")
 def renderMain():
-	if request.post != nil {
-		return render_template('page2.html')
-	}
-    return render_template('page1.html')
-  
+	session["test-score"]=0
+	return render_template('page1.html')
+	
+@app.route('/question-two', methods=['POST'])
+def render_page2():
+	if request.form.get('A') == None:
+		session["test-score"]+=1
+	return render_template('page2.html')
+	
+@app.route('/question-three', methods=['POST'])
+def render_page3():
+	if request.form.get('A') == None:
+		session["test-score"]+=1
+	return render_template('page3.html')
+	
+@app.route('/question-four', methods=['POST'])
+def render_page4():
+	if request.form.get('A') == None:
+		session["test-score"]+=1
+	return render_template('page4.html')
+	
+@app.route('/final', methods=['POST'])
+def render_final():
+	if request.form.get('A') == None:
+		session["test-score"]+=1
+	return render_template('page1.html')
+	
 if __name__=="__main__":
-  app.run(debug=False)
+	app.run(debug=False)
